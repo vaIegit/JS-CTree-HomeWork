@@ -4,15 +4,12 @@
 	</head>
 	<body>
 		<script>
-			var sym = '*' 
+			var sym = prompt('Пожалуйста, введите символ для создания ёлочки ')
+			var a=prompt('Пожалуйста, введите количество рядов ёлочки');
 			var doc	= "</br>"
-			var a=prompt('Please enter a value');
 			for (var i=0; i<a; i++) {
 				var x = sym
-				for (var y=0; y<i; y++) {
-
-					x += sym
-				}
+				for (var y=0; y<i; y++) {x += sym}
 				var z = x + "</br>";
 				doc += z;
 			}
